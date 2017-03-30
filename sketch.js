@@ -28,7 +28,7 @@ function Pacman(X, Y){
         }
         if(keyIsDown(DOWN_ARROW)){
             this.y += 5;
-            this.rotation = 90;
+            this.rotation = 90
         }
         if(keyIsDown(RIGHT_ARROW)){
             this.x += 5;
@@ -45,6 +45,9 @@ function Pacman(X, Y){
         }
         if(this.x < 0){
             this.x = width;
+        }
+        if(this.y > height){
+            this.y = 0;
         }
         if(this.y < 0){
             this.y = height;
